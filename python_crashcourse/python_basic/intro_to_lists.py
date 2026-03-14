@@ -65,3 +65,49 @@ cars = ['BMW', 'Audi', 'Toyota Camri', 'Honda']
 cars.sort()
 print(cars)
 print(len(cars))
+
+
+magicians = ['alice', 'david', 'carolina']
+for magician in magicians:
+    print('that was a great trick.')
+    print("I can't wait to see your next tricks " + magician.title())
+print("Thank you, everyone! That was a great magic show")
+
+
+pizzas = ['Cheese Pizza', 'pepperoni pizza', 'meat pizza']
+for pizza in pizzas:
+    print('I like this '+ pizza.title() + '.')
+print('How much you like our Pizza?')
+
+
+numbers = list(range(1, 11))
+print(numbers)
+
+squares = []
+for values in range(1, 11):
+    squares.append(values * values)
+print(squares)
+
+
+players = ['Michael', 'martina', 'charles', 'florence', 'eli']
+for player in players[:3]:
+    print(player)
+
+my_foods = ['pizza', 'falafel', 'carrot cake']
+friend_foods = my_foods[:]
+print('My favourite foods are:')
+print(my_foods)
+print('\nMy friend\'s favourite foods are:')
+print(friend_foods)
+
+
+#Tuples
+dimenssions = (200, 50)
+
+print(dimenssions[0])
+print(dimenssions[1])
+
+buffets = ('cake', 'biryani', 'chicken over rice', 'salad')
+
+for buffet in buffets:
+    print(buffet)
