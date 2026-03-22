@@ -1,0 +1,39 @@
+{
+    "students": {
+        "Alice": {
+            "name": "Alice",
+            "grades": {
+                "Math": 90,
+                "Python 101": 85
+            }
+        },
+        "Bob": {
+            "name": "Bob",
+            "grades": {
+                "Math": 78
+            }
+        },
+        "Charlie": {
+            "name": "Charlie",
+            "grades": {
+                "Python 101": 92
+            }
+        }
+    },
+    "courses": {
+        "Math": {
+            "course_name": "Math",
+            "enrolled_students": [
+                "Alice",
+                "Bob"
+            ]
+        },
+        "Python 101": {
+            "course_name": "Python 101",
+            "enrolled_students": [
+                "Alice",
+                "Charlie"
+            ]
+        }
+    }
+}
