@@ -23,11 +23,20 @@ class Habit():
         return habit_entry
 
     def mark_habit(self):
+        today = datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")
         for habit in self.generated_habit:
             if habit['habit_name'] == self.name:
                 habit['habit_complete'] = True
+                habit['date'] = today
                 return habit
 
+    def completed(self):
+
+        today = datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")
+        for habit in self.generated_habit:
+            if habit['date'] == today and habit['habit_complete']:
+                return True
+        return False
     def check_habit(self):
         for habit in self.generated_habit:
             if habit['habit_name'] == self.name:
