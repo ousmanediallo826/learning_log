@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Workout",
+        "frequency": "3/7",
+        "category": "Phys",
+        "generated_habit": []
+    },
+    {
+        "name": "Reading",
+        "frequency": "7/7",
+        "category": "Mind",
+        "generated_habit": []
+    },
+    {
+        "name": "RUnning",
+        "frequency": "3/4",
+        "category": "Cardio",
+        "generated_habit": []
+    },
+    {
+        "name": "Writing",
+        "frequency": "3",
+        "category": "6/7",
+        "generated_habit": []
+    }
+]

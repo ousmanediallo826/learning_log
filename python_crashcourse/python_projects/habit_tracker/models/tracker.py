@@ -40,24 +40,3 @@ class HabitTracker():
 
 
 
-tracker = HabitTracker()
-
-habit1 = Habit("Workout", "Daily", "Health")
-habit2 = Habit("Reading", "Daily", "Mind")
-
-tracker.add_habit(habit1)
-tracker.add_habit(habit2)
-
-# Mark Workout as done today
-habit1.generate_habit()
-habit1.mark_habit()
-
-# Print all habits
-tracker.habit_lists()
-
-# Print summary
-tracker.summary()
-
-# Find a habit
-found = tracker.find_habit("Workout")
-print("Found:", found)

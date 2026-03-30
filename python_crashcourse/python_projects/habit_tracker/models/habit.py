@@ -22,6 +22,13 @@ class Habit():
         self.generated_habit.append(habit_entry)
         return habit_entry
 
+    def to_dict(self):
+        return {
+            'name': self.name,
+            'frequency': self.frequency,
+            'category': self.category,
+            'generated_habit': self.generated_habit
+        }
     def mark_habit(self):
         today = datetime.datetime.now().strftime("%d/%m/%Y %H:%M:%S")
         for habit in self.generated_habit:
@@ -76,6 +83,13 @@ class Habit():
 
         return streak
 
+
+    @classmethod
+    def from_dict(cls, data):
+        habit = cls(data['name'], data['frequency'], data['category'])
+        habit.generated_habit = data['generated_habit']
+        return habit
+
     def __str__(self):
         return f"Habit: {self.name} | Frequency: {self.frequency} | Category: {self.category} | Streak: {self.calculate_streak()} | Date: {datetime.datetime.now().strftime('%d/%m/%Y %H:%M:%S')}"
 
@@ -86,11 +100,3 @@ class Habit():
 
 
 
-habit = Habit("Workout", "Daily", "Health")
-
-habit.generate_habit()
-habit.mark_habit()
-
-print("Streak:", habit.calculate_streak())
-print(habit)        # uses __str__
-print(repr(habit))  # u
